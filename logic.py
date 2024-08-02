@@ -19,16 +19,18 @@ class Pieces(Enum):
 
 
 def initial_state():
-    return numpy.array([
-        [Pieces.B_ROOK, Pieces.B_KNIGHT, Pieces.B_BISHOP, Pieces.B_QUEEN, Pieces.B_KING, Pieces.B_BISHOP, Pieces.B_KNIGHT, Pieces.B_ROOK]
-        [Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN]
-        [8]
-        [8]
-        [8]
-        [8]
-        [Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN]
-        [Pieces.W_ROOK, Pieces.W_KNIGHT, Pieces.W_BISHOP, Pieces.W_QUEEN, Pieces.W_KING, Pieces.W_BISHOP, Pieces.W_KNIGHT, Pieces.W_ROOK]    
-    ])
+
+    return [
+        [Pieces.B_ROOK, Pieces.B_KNIGHT, Pieces.B_BISHOP, Pieces.B_QUEEN, Pieces.B_KING, Pieces.B_BISHOP, Pieces.B_KNIGHT, Pieces.B_ROOK],
+        [Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN, Pieces.B_PAWN],
+        [None] * 8,
+        [None] * 8,
+        [None] * 8,
+        [None] * 8,
+        [Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN, Pieces.W_PAWN],
+        [Pieces.W_ROOK, Pieces.W_KNIGHT, Pieces.W_BISHOP, Pieces.W_QUEEN, Pieces.W_KING, Pieces.W_BISHOP, Pieces.W_KNIGHT, Pieces.W_ROOK],
+    ]
+
 def utility(state):
     pass
 
@@ -44,5 +46,8 @@ def terminal(state):
 def minimax():
     pass
 
-def utility():
+def min_value():
+    pass
+
+def max_value():
     pass
